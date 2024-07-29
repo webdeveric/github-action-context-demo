@@ -1,6 +1,11 @@
 name: Print GitHub data
 
-on: [push]
+on:
+  push:
+  pull_request:
+  create:
+  delete:
+  release:
 
 jobs:
   printGitHubData:
