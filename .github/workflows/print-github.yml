@@ -9,7 +9,7 @@ on:
 
 jobs:
   printGitHubData:
-    name: Print GitHub data
+    name: "Print GitHub data - ${{ github.event_name }}"
     runs-on: ubuntu-22.04
     steps:
       - name: Print GitHub data
