@@ -8,6 +8,13 @@ on:
   release:
 
 jobs:
+  publishReleaseNotes:
+    name: "Publish Release Notes - ${{ github.event_name }}"
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Publish Release Notes
+        uses: webdeveric/publish-release-notes-action@309a52e059a3353b3a92312884066cf9938967b8
+
   printGitHubData:
     name: "Print GitHub data - ${{ github.event_name }}"
     runs-on: ubuntu-22.04
